@@ -1,5 +1,4 @@
 "use client";
-import axios from "axios";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Loading from "@/components/Loading";
@@ -24,25 +23,25 @@ const InfoCards = () => {
   }, [router]);
 
   return (
-    <div className="flex justify-between">
-      <div className="flex flex-col">
-        <p>Subscription expires on</p>
-        <p>{infoData.expireTime}</p>
+    <div className="flex justify-between mt-11 gap-7">
+      <div className="flex flex-col gap-3 justify-center w-52 h-28 bg-[#E3F5FF] rounded-2xl px-5">
+        <p className="text-sm font-semibold">Subscription expires on</p>
+        <p className="text-lg font-medium">{infoData.expireTime}</p>
       </div>
-      <div className="flex flex-col">
-        <p>Last charge</p>
-        <p>
+      <div className="flex flex-col gap-3 justify-center w-52 h-28 bg-[#E5ECF6] rounded-2xl px-5">
+        <p className="text-sm font-semibold">Last charge</p>
+        <p className="text-lg font-medium">
           {infoData.lastChargeAmount}
-          <span>{infoData.lastCharge}</span>
+          <span className="text-sm "> {infoData.lastCharge}</span>
         </p>
       </div>
-      <div className="flex flex-col">
-        <p>Total Usage Data</p>
-        <p>{infoData.totalDataUsage} GB</p>
+      <div className="flex flex-col gap-3 justify-center w-52 h-28 bg-[#E3F5FF] rounded-2xl px-5 font-bold">
+        <p className="text-sm">Total Usage Data</p>
+        <p className="text-lg">{infoData.totalDataUsage} GB</p>
       </div>
-      <div className="flex flex-col">
-        <p>Daily Usage Data</p>
-        <p>{infoData.dailyUsage} GB</p>
+      <div className="flex flex-col gap-3 justify-center w-52 h-28 bg-[#E5ECF6] rounded-2xl px-5 font-bold">
+        <p className="text-sm">Daily Usage Data</p>
+        <p className="text-lg">{infoData.dailyUsage} GB</p>
       </div>
     </div>
   );
