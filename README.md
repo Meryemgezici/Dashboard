@@ -1,6 +1,6 @@
 <h1>Dashboard</h1>
  
-[Projenin Vercel Link'i](https://madyanes-table.vercel.app/)
+[Projenin Vercel Link'i](https://dashboard-eight-plum-12.vercel.app/)
 
 <h2>Kullanılan Teknolojiler</h2>
 
