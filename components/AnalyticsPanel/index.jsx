@@ -4,8 +4,8 @@ import InfoCards from "../InfoCards";
 import { Graphics } from "../Graphics";
 const AnalyticsPanel = () => {
   return (
-    <div className="flex flex-col">
-      <div class="bg-[#78B6FF4D] rounded-[5px] w-[811px] flex items-center justify-between mt-5 px-4 py-2 md:py-4 h-12 ">
+    <div className="flex flex-col ml-96 xl:ml-0">
+      <div class="bg-[#78B6FF4D] rounded-[5px] w-2/5 sm:w-[600px] md:w-[750px] lg-w-[811px] flex items-center justify-between mt-5 px-4 py-2 md:py-4 min-h-12 ">
         <p class="text-center md:text-left">
           Special Offer! Get Complete Free Proxy 10 MB Proxy, without credit
           card.{" "}
@@ -20,7 +20,9 @@ const AnalyticsPanel = () => {
       </h1>
       <div className="flex gap-3 border-b border-gray-400 mt-9">
         <p>My Proxies</p>
-        <p className="border-b-[3px] border-[#0C6DFC] text-[#0C6DFC]" >Dashboard</p>
+        <p className="border-b-[3px] border-[#0C6DFC] text-[#0C6DFC]">
+          Dashboard
+        </p>
       </div>
       <InfoCards />
       <Graphics />

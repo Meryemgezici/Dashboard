@@ -13,9 +13,9 @@ import {
 
 export function Graphics() {
   return (
-    <div  className="mt-20 rounded-2xl bg-white py-5">
+    <div className="mt-20 rounded-2xl bg-white py-5">
       <h4 className="font-sm font-bold px-12 pb-5">Data usage per network</h4>
-<LineChart
+      <LineChart
         width={892}
         height={443}
         data={weeklyData}
@@ -26,14 +26,14 @@ export function Graphics() {
           bottom: 5,
         }}
       >
- <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} />
         <XAxis dataKey="day" />
-        <YAxis  axisLine={false}/>
+        <YAxis axisLine={false} />
         <Tooltip />
         <Legend />
         <Text x={450} y={30} textAnchor="middle" fontSize={18}>
-        Data usage per network
-      </Text>
+          Data usage per network
+        </Text>
         <Line
           type="monotone"
           dataKey="gbUsed"
@@ -43,7 +43,5 @@ export function Graphics() {
         />
       </LineChart>
     </div>
-      
-   
   );
 }

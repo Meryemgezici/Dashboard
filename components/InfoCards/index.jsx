@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Loading from "@/components/Loading";
 import { getAPI } from "@/services/fetchAPI";
 const InfoCards = () => {
   const [infoData, setInfoData] = useState([]);
@@ -23,7 +22,7 @@ const InfoCards = () => {
   }, [router]);
 
   return (
-    <div className="flex justify-between mt-11 gap-7">
+    <div className="flex justify-between mt-11 gap-7 ">
       <div className="flex flex-col gap-3 justify-center w-52 h-28 bg-[#E3F5FF] rounded-2xl px-5">
         <p className="text-sm font-semibold">Subscription expires on</p>
         <p className="text-lg font-medium">{infoData.expireTime}</p>
